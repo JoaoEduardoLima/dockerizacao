@@ -83,6 +83,7 @@ services:
     depends_on:
       migrate:
         condition: service_started
+    restart: always
         
 networks:
   app-network:
